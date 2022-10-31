@@ -14,6 +14,6 @@ lns=LinearRegression()
 x=data.iloc[:,:3]
 y=data.iloc[:,-1]
 lns.fit(x.values,y.values)
-pickle.dump(lns,open('model2.pkl','wb'))
-model2=pickle.load(open('model2.pkl','rb'))
-print(model2.predict([[5,6,7]]))
+pickle.dump(lns,open('model3.pkl','wb'))
+model3=pickle.load(open('model3.pkl','rb'))
+print(model3.predict([[5,6,7]]))
