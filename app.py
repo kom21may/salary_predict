@@ -2,7 +2,7 @@ import numpy as np
 import pickle
 from flask import Flask,request,render_template
 app=Flask(__name__)
-model=pickle.load(open('model2.pkl','rb'))
+model=pickle.load(open('model3.pkl','rb'))
 
 @app.route('/')
 def home():
